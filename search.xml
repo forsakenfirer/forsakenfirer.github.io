@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[STM32 MFRC522 RFID]]></title>
+    <url>%2F2017%2F09%2F08%2FSTM32-MFRC522-RFID%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>stm32</category>
+      </categories>
+      <tags>
+        <tag>stm32</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>%2F2017%2F09%2F07%2Fmqtt%2F</url>
     <content type="text"><![CDATA[Table of Contents1. mqtt是一个消息订阅转发机制的通信协议1.1. mqtt可以实现多设备之间的相互通信 mqtt是一个消息订阅转发机制的通信协议mqtt可以实现多设备之间的相互通信]]></content>
