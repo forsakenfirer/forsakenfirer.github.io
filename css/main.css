@@ -1997,7 +1997,7 @@ animation-play-state:paused;*/
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc4ff;
+  background: #ff8725;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3079,6 +3079,6 @@ hr {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  -webkit-box-shadow: 0 0 15px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 15px rgba(202,203,204,0.5);
 }
