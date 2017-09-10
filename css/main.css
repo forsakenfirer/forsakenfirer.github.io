@@ -2164,7 +2164,7 @@ animation-play-state:paused;*/
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #74d2ff;
+  background: #ff916c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3276,7 +3276,7 @@ hr {
 }
 body {
   background: url("http://img.thornyway.com/image/a/5-1502130S138.png");
-  background-size: cover;
+  background-size: tile;
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
