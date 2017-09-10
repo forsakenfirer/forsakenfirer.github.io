@@ -1991,6 +1991,7 @@ pre .javascript .function {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
+  cursor: pointer;
 /* 头像圆形 */
   border-radius: 80px;
   -webkit-border-radius: 80px;
@@ -2164,7 +2165,7 @@ animation-play-state:paused;*/
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d98501;
+  background: #85ffb8;
 }
 .links-of-blogroll {
   font-size: 13px;

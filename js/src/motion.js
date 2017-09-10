@@ -1,5 +1,9 @@
 /* global NexT: true */
 
+$('.site-author-image').click(function(){
+    window.location.href="http://www.thornyway.com";
+});
+
 $(document).ready(function () {
   NexT.motion = {};
 
