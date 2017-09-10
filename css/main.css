@@ -2164,7 +2164,7 @@ animation-play-state:paused;*/
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a18cff;
+  background: #9d4d96;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3275,14 +3275,14 @@ hr {
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 body {
-  background: url("http://img.thornyway.com/image/a/5-1502130S138.png");
+  background: url("http://img.thornyway.com/image/a/5-13032Q02521.png");
   background-size: tile;
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
 }
 #sidebar {
-  background: url("http://img.thornyway.com/image/a/5-13032Q02521.png");
+  background: url("http://img.thornyway.com/image/a/5-1502130QG8-51.jpg");
   background-size: tile;
   background-position: center;
   background-repeat: repeat;
@@ -3301,7 +3301,7 @@ body {
   background: rgba(13,13,13,0.6) none repeat scroll !important;
 }
 .footer {
-  background: rgba(13,13,13,0.6) none repeat scroll !important;
+  background: rgba(13,13,13,0.5) none repeat scroll !important;
 }
 .footer-inner {
   color: #fcfcfc;
