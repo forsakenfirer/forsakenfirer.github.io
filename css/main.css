@@ -2165,7 +2165,7 @@ animation-play-state:paused;*/
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff1a63;
+  background: #ee7adb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3297,7 +3297,7 @@ body {
   border-radius: 10px;
   margin-top: 60px;
   background: rgba(250,250,210,0.5) none repeat scroll !important;
-  box-shadow: 0px 0px 20px #000;
+  box-shadow: 0px 0px 20px #888;
 }
 .header {
   background: rgba(13,13,13,0.8) none repeat scroll !important;
