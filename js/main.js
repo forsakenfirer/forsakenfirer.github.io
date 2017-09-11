@@ -110,9 +110,19 @@
 
             toc.querySelector('a[href="#' + titles[0].id + '"]').parentNode.classList.add('active');
 
+            forEach.call($$('a[href^="#"]'), function (el) {
+
+                el.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var top = offset($('[id="' + decodeURIComponent(this.hash).substr(1) + '"]')).y - headerH;
+                    // animate(Blog.goTop.bind(Blog, top));
+                    docEl.scrollTop = top;
+                })
+            });
+
             return {
                 fixed: function (top) {
-                    top >= bannerH - headerH ? toc.classList.add('fixed') : toc.classList.remove('fixed');
+                    top >= bannerH - headerH ? toc.classList.add('fixed') : toc.classList.remove('fixed')
                 },
                 actived: function (top) {
                     for (i = 0, len = titles.length; i < len; i++) {
@@ -201,16 +211,9 @@
             $('#search').addEventListener(even, toggleSearch);
         },
         reward: function () {
-            var modal = new this.modal('#reward');
-            $('#rewardBtn').addEventListener(even, modal.toggle);
+            var modal = new this.modal('#reward')
 
-            var $rewardToggle = $('#rewardToggle');
-            var $rewardCode = $('#rewardCode');
-            if ($rewardToggle) {
-                $rewardToggle.addEventListener('change', function () {
-                    $rewardCode.src = this.checked ? this.dataset.alipay : this.dataset.wechat
-                })
-            }
+            $('#rewardBtn').addEventListener(even, modal.toggle)
         },
         waterfall: function () {
 
@@ -236,22 +239,18 @@
         },
         page: (function () {
             var $elements = $$('.fade, .fade-scale');
-            var visible = false;
 
             return {
                 loaded: function () {
                     forEach.call($elements, function (el) {
                         el.classList.add('in')
-                    });
-                    visible = true;
+                    })
                 },
                 unload: function () {
                     forEach.call($elements, function (el) {
                         el.classList.remove('in')
-                    });
-                    visible = false;
-                },
-                visible: visible
+                    })
+                }
             }
 
         })(),
@@ -407,17 +406,14 @@
     };
 
     w.addEventListener('load', function () {
-        loading.classList.remove('active');
-        Blog.page.loaded();
-        w.lazyScripts && w.lazyScripts.length && Blog.loadScript(w.lazyScripts)
-    });
-
-    w.addEventListener('DOMContentLoaded', function () {
         Blog.waterfall();
         var top = docEl.scrollTop;
         Blog.toc.fixed(top);
         Blog.toc.actived(top);
+        loading.classList.remove('active');
         Blog.page.loaded();
+
+        w.lazyScripts && w.lazyScripts.length && Blog.loadScript(w.lazyScripts)
     });
 
     var ignoreUnload = false;
@@ -430,11 +426,6 @@
         } else {
             ignoreUnload = false;
         }
-    });
-
-    w.addEventListener('pageshow', function () {
-        // fix OSX safari #162
-        !Blog.page.visible && Blog.page.loaded();
     });
 
     w.addEventListener('resize', function () {
